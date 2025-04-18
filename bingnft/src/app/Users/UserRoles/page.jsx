@@ -11,7 +11,9 @@ export default function Homepage() {
 
         {/* Main content area */}
       <h1 className="text-black">
-        TODO: approve friends request, and add the social interactions
+        TODO: approve user's request to release an NFT
+         bind NFT to specific locations, 
+         or bind NFT to specific events.
         </h1>  
       </div>
     </div>

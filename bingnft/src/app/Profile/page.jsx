@@ -11,9 +11,9 @@ export default function Homepage() {
 
         {/* Main content area */}
         <main className="flex-1 p-6">
-      <h1 className="text-black">
-        TODO: view a collection of users
-        </h1>  
+          <h1>
+世界上唯一的神。
+          </h1>
         </main>
       </div>
     </div>
