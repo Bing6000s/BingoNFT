@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar";
 import Sidebar from "@/components/Sidebar";
 import NftProfileCard from "@/components/NFTProfileCard";
+import UserRole from "@/components/Userpanel/userRoles";
 export default function Homepage() {
   return (
     <div className="min-h-screen bg-gray-100 overflow-hidden">
@@ -10,11 +11,9 @@ export default function Homepage() {
         <Sidebar />
 
         {/* Main content area */}
-      <h1 className="text-black">
-        TODO: approve user's request to release an NFT
-         bind NFT to specific locations, 
-         or bind NFT to specific events.
-        </h1>  
+        <div className="flex-1">
+          <UserRole/>;
+        </div>
       </div>
     </div>
   );
