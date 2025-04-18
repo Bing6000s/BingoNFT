@@ -13,6 +13,11 @@ import Link from "next/link";
 
 const Sidebar = () => {
   const [isUserOpen, setIsUserOpen] = useState(false);
+  const [isNFTOpen, setIsNFTOpen] = useState(false);
+  const [isEventFormsOpen, setIsEventFormOpen] = useState(false);
+  const [isFriendsPanelOpen, setFriendsPanelOpen] = useState(false);
+
+
 
   return (
     <aside className="w-64 h-screen bg-white shadow-md flex flex-col p-4">
@@ -46,9 +51,21 @@ const Sidebar = () => {
           </div>
           {isUserOpen && (
             <ul className="ml-8 mt-1 text-sm text-gray-600 space-y-1">
-              <li className="hover:text-black cursor-pointer">All Users</li>
-              <li className="hover:text-black cursor-pointer">Add User</li>
-              <li className="hover:text-black cursor-pointer">User Roles</li>
+              <li>
+                <Link href="/Users/AllUsers" className="block hover:text-black cursor-pointer">
+                  All Users
+                </Link>
+              </li>
+              <li>
+                <Link href="/Users/AddUsers" className="block hover:text-black cursor-pointer">
+                  Add User
+                </Link>
+              </li>
+              <li>
+                <Link href="/Users/UserRoles" className="block hover:text-black cursor-pointer">
+                  User Roles
+                </Link>
+              </li>
             </ul>
           )}
         </div>
