@@ -1,50 +1,47 @@
 export default function NftProfileCard() {
   return (
-    <div className="w-full max-w-6xl bg-white rounded-2xl shadow-lg border border-gray-200 p-6 mx-auto flex flex-col md:flex-row gap-6">
-      {/* Left side: Sub NFTs + Accomplishments */}
+    <div className="w-full max-w-6xl bg-white rounded-2xl shadow-xl border border-gray-200 p-8 mx-auto flex flex-col md:flex-row gap-8">
+      {/* Left side */}
       <div className="md:w-2/3 flex flex-col justify-between">
+        {/* Title */}
+        <h2 className="text-3xl font-bold text-gray-900 mb-4">theBing</h2>
+
         {/* Sub NFTs */}
-        <div className="space-y-2">
-          <div className="text-gray-700">
-              <img
-              src="/smallNFT/hackpsu.png"
-              alt = "SubNFT1" 
-              className="max-w-[50px] max-h-[50px]"
-              />
-          </div>
-          <div className="text-gray-700">
-               <img
-              src="/smallNFT/ApexMaster.png"
-              alt = "SubNFT2" 
-              className="max-w-[50px] max-h-[50px]"
-              />
-            </div>
-          <div className="text-gray-700">
-               <img
-              src="/smallNFT/hackpsu.png"
-              alt = "SubNFT3" 
-              className="max-w-[50px] max-h-[50px]"
-              />
-              </div>
+        <div className="flex gap-4">
+          <img
+            src="/smallNFT/hackpsu.png"
+            alt="SubNFT1"
+            className="w-14 h-14 rounded-lg border border-gray-300 object-cover"
+          />
+          <img
+            src="/smallNFT/ApexMaster.png"
+            alt="SubNFT2"
+            className="w-14 h-14 rounded-lg border border-gray-300 object-cover"
+          />
+          <img
+            src="/smallNFT/hackpsu.png"
+            alt="SubNFT3"
+            className="w-14 h-14 rounded-lg border border-gray-300 object-cover"
+          />
         </div>
 
         {/* Accomplishments */}
-        <div className="mt-6 space-y-1">
-          <div className="font-semibold text-gray-800 text-lg">Accomplishments</div>
+        <div className="mt-8">
+          <h3 className="font-semibold text-gray-800 text-lg mb-2">Accomplishments</h3>
           <ul className="list-disc list-inside text-sm text-gray-600 space-y-1">
-            <li>Drives RAV4 but still faster than you - Speed Tickets:5</li>
+            <li>Drives RAV4 but still faster than you - Speed Tickets: 5</li>
             <li>Gold in Apex & Val, thinks he's Radiant</li>
             <li>Falls on concrete like it’s a memory foam bed</li>
           </ul>
         </div>
       </div>
 
-      {/* Right side: NFT display */}
+      {/* Right side NFT */}
       <div className="md:w-1/3 flex items-center justify-center">
         <img
           src="/gothe.png"
-          alt="NFT"
-          className="w-full max-w-[200px] aspect-square object-cover border-2 border-gray-300 rounded-xl shadow-lg"
+          alt="Main NFT"
+          className="w-full max-w-[220px] aspect-square object-cover border-2 border-gray-300 rounded-2xl shadow-lg"
         />
       </div>
     </div>
