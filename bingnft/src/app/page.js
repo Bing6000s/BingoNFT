@@ -1,6 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Sidebar from "@/components/Sidebar";
-import NftProfileCard1 from "@/components/NFTProfileCard";
+import {NftProfileCard, NftProfileCard1} from "@/components/NFTProfileCard";
 export default function Homepage() {
   return (
     <div className="min-h-screen bg-gray-100 overflow-hidden">
@@ -10,9 +10,14 @@ export default function Homepage() {
         <Sidebar />
 
         {/* Main content area */}
-        <main className="flex-1 p-6">
+        <main className="flex-1 py-6">
           <h1 className="text-center font-bold">Top NFT cards</h1>
-          <NftProfileCard1 />
+          <div>
+          <NftProfileCard className="my-4" />
+          </div>
+          <div className="mt-5">
+          <NftProfileCard1 className="mt-10"/>
+          </div>
         </main>
       </div>
     </div>
