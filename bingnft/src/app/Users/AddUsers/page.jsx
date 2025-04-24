@@ -1,20 +1,32 @@
 import Navbar from "@/components/Navbar";
 import Sidebar from "@/components/Sidebar";
-import NftProfileCard1 from "@/components/NFTProfileCard";
+import NFTProfileCard, { NftProfileCard } from "@/components/NFTProfileCard";
 export default function Homepage() {
   return (
     <div className="min-h-screen bg-gray-100 overflow-hidden">
-      <Navbar />
       <div className="flex">
-      {/* Sidebar (left) */}
-      <Sidebar />
+        {/* Sidebar (left) */}
+        <Sidebar />
 
-      {/* Main content area */}
-      <main className="flex-1 p-6">
-      <h1 className="text-black">
-        TODO: add users to this hash addresses's social panel
-        </h1>  
-      </main>
+        {/* Main content area */}
+        <main className="flex-1 flex flex-col px-6 py-4">
+          {/* Navbar aligned to the top-right */}
+          <div className="flex justify-end mb-4">
+            <Navbar />
+          </div>
+
+          {/* Page heading */}
+          <h1 className="text-center font-bold mb-6">
+            Edit Your NFT Card Information.
+          </h1>
+
+          {/* Profile form aligned center-right */}
+          <div className="flex justify-center">
+            <div className="w-full max-w-md">
+              <NftProfileCard/>
+            </div>
+          </div>
+        </main>
       </div>
     </div>
   );
