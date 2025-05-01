@@ -27,9 +27,8 @@ const Sidebar = () => {
         <div className="flex items-center justify-between bg-indigo-600 text-white rounded-lg px-4 py-2 mb-4 cursor-pointer">
           <div className="flex items-center space-x-2">
             <FaHome />
-            <span className="font-medium">Dashboard</span>
+            <span className="font-medium">Landing Page</span>
           </div>
-          <span className="text-xs bg-rose-500 px-2 py-0.5 rounded-full">9</span>
         </div>
       </Link>
 

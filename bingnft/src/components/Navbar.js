@@ -71,15 +71,14 @@ export const NavBar = () => {
     logging: { developerMode: false },
     checkInstallationImmediately: false,
     dappMetadata: {
-      name: "Next-Metamask-Boilerplate",
-      url: host, // using the host constant defined above
+      name: "BingNFT",
+      url: host,
     },
   };
 
   return (
-    /*flex items-center justify-items-end max-w-screen-xl px-6 mx-auto py-7 rounded-xl*/
-    <nav className="grid">
-      <div className="justify-self-end">
+    <nav className="w-full bg-white shadow-sm px-6 py-4 border-b">
+      <div className="max-w-7xl mx-auto flex justify-end items-center">
         <MetaMaskProvider debug={false} sdkOptions={sdkOptions}>
           <ConnectWalletButton />
         </MetaMaskProvider>
@@ -87,5 +86,6 @@ export const NavBar = () => {
     </nav>
   );
 };
+
 
 export default NavBar;
