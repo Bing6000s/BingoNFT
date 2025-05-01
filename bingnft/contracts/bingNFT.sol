@@ -66,3 +66,4 @@ contract BING is ERC721, Ownable {
             return _ownerOf(tokenId) != address(0);
      }
 }
+
