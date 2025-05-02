@@ -4,13 +4,9 @@ import { useState } from 'react';
 export default function EditProfile() {
   const [formData, setFormData] = useState({
     Username: '',
-    MainNFTAddress: '',
-    NFT1Address: '',
-    NFT2Address: '',
-    NFT3Address: '',
-    Accomplishment1: '',
-    Accomplishment2: '',
-    Accopmlishment3: '',
+    PictureAddress: '',
+    quote1: '',
+    quote2: '',
   });
 
   const handleChange = (e) => {
@@ -20,13 +16,9 @@ export default function EditProfile() {
   const handleReset = () => {
     setFormData({
       Username: '',
-      MainNFTAddress: '',
-      NFT1Address: '',
-      NFT2Address: '',
-      NFT3Address: '',
-      Accomplishment1: '',
-      Accomplishment2: '',
-      Accopmlishment3: '',
+      PictureAddress: '',
+      quote1: '',
+      quote2: '',
     });
   };
 
@@ -42,58 +34,26 @@ export default function EditProfile() {
         className="w-full border rounded px-3 py-2 mt-1"
       />
 
-      <label className="block mt-4 text-sm font-semibold">Main NFT Address</label>
+      <label className="block mt-4 text-sm font-semibold">Picture URL</label>
       <input
-        name="MainNFTAddress"
-        value={formData.MainNFTAddress}
+        name="PictureAddress"
+        value={formData.PictureAddress}
         onChange={handleChange}
         className="w-full border rounded px-3 py-2 mt-1"
       />
 
-      <label className="block mt-4 text-sm font-semibold">NFT #1 Address</label>
+      <label className="block mt-4 text-sm font-semibold">Quote 1</label>
       <input
-        name="NFT1Address"
-        value={formData.NFT1Address}
+        name="quote1"
+        value={formData.quote1}
         onChange={handleChange}
         className="w-full border rounded px-3 py-2 mt-1"
       />
 
-      <label className="block mt-4 text-sm font-semibold">NFT #2 Address</label>
+      <label className="block mt-4 text-sm font-semibold">Quote 2</label>
       <input
-        name="NFT2Address"
-        value={formData.NFT2Address}
-        onChange={handleChange}
-        className="w-full border rounded px-3 py-2 mt-1"
-      />
-
-      <label className="block mt-4 text-sm font-semibold">NFT #3 Address</label>
-      <input
-        name="NFT3Address"
-        value={formData.NFT3Address}
-        onChange={handleChange}
-        className="w-full border rounded px-3 py-2 mt-1"
-      />
-
-      <label className="block mt-4 text-sm font-semibold">Accomplishment 1</label>
-      <input
-        name="Accomplishment1"
-        value={formData.Accomplishment1}
-        onChange={handleChange}
-        className="w-full border rounded px-3 py-2 mt-1"
-      />
-
-      <label className="block mt-4 text-sm font-semibold">Accomplishment 2</label>
-      <input
-        name="Accomplishment2"
-        value={formData.Accomplishment2}
-        onChange={handleChange}
-        className="w-full border rounded px-3 py-2 mt-1"
-      />
-
-      <label className="block mt-4 text-sm font-semibold">Accomplishment 3</label>
-      <input
-        name="Accopmlishment3"
-        value={formData.Accopmlishment3}
+        name="quote2"
+        value={formData.quote2}
         onChange={handleChange}
         className="w-full border rounded px-3 py-2 mt-1"
       />
