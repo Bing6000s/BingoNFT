@@ -17,16 +17,13 @@ export default function Homepage() {
           </div>
 
           {/* Page heading */}
-          <section className="text-center px-4 mt-6">
-            <h1 className="text-xl font-semibold mb-2 leading-relaxed">
-              Welcome to <span className="text-indigo-600 font-bold">BingoNFT</span>!
-            </h1>
-            <p className="text-lg text-gray-600 leading-relaxed">
-              Feel free to add a card — it only costs <span className="font-mono">1 wei</span>,
-              which is less than <span className="font-mono">$0.000001 USD</span>.
+          <section className="text-center px-4 mt-6 text-indigo-800">
+            <p className="text-lg leading-relaxed">
+              Feel free to add a card — it only costs <span className="font-bold">1 wei</span>,
+              which is less than <span className="font-bold">$0.000001 USD</span>.
             </p>
-            <p className="text-lg text-gray-600 leading-relaxed">
-              We currently only accepts BNB coins.
+            <p className="text-l leading-relaxed">
+              We currently only accepts <span className="font-bold">BNB coins.</span>
             </p>
           </section>
 

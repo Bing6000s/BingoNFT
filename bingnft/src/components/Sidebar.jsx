@@ -22,11 +22,11 @@ const Sidebar = () => {
       {/* Sidebar Links */}
       <SidebarItem icon={<FaBookOpen />} label="Introduction" href="/" />
       <SidebarItem icon={<FaPlusCircle />} label="Add New Card" href="/Profile" />
-      <SidebarItem icon={<FaImages />} label="Browse Gallery" href="/gallery" />
-      <SidebarItem icon={<FaSearch />} label="Search Users" href="/users/search" />
-      <SidebarItem icon={<FaEye />} label="See Warnings" href="/warnings" />
-      <SidebarItem icon={<FaUserSlash />} label="Delete (Admin Only)" href="/admin/delete" />
-      <SidebarItem icon={<FaExclamationTriangle />} label="Browse Warnings" href="/warnings/browse" />
+      <SidebarItem icon={<FaImages />} label="Browse Gallery" href="/Gallery" />
+      <SidebarItem icon={<FaSearch />} label="Search Users" href="/Search" />
+      <SidebarItem icon={<FaEye />} label="See Warnings" href="/Warnings" />
+      <SidebarItem icon={<FaUserSlash />} label="Delete (Admin Only)" href="/Delete" />
+      <SidebarItem icon={<FaExclamationTriangle />} label="Browse Warnings" href="/GetWarnings" />
 
     </aside>
   );
