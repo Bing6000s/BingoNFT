@@ -34,7 +34,7 @@ export default function Gallery() {
 
         const temp = [];
 
-        for (let index = 0; index < 255; index++) {
+        for (let index = 0; index < 64; index++) {
           try {
             const data = await readContract({
               contract,
