@@ -1,6 +1,6 @@
 import Navbar from "./../../components/Navbar";
 import Sidebar from "./../../components/Sidebar";
-import Profile from "./../../components/Userpanel/profile"
+import Profile from "../../components/Userpanel/profile"
 export default function Homepage() {
   return (
     <div className="min-h-screen bg-gray-100 overflow-hidden">
