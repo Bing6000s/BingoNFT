@@ -1,6 +1,6 @@
-import Navbar from "@/components/Navbar";
-import Sidebar from "@/components/Sidebar";
-import UserRole from "@/components/Userpanel/userRoles";
+import Navbar from "./../../../components/Navbar";
+import Sidebar from "./../../../components/Sidebar";
+import UserRole from "./../../../components/Userpanel/userRoles";
 export default function Homepage() {
   return (
     <div className="min-h-screen bg-gray-100 overflow-hidden">
