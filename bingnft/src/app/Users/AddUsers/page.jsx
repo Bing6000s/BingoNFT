@@ -1,6 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Sidebar from "@/components/Sidebar";
-import NFTProfileCard, { NftProfileCard } from "@/components/demoCard";
+import {NftProfileCardGeneric} from "@/components/demoCard";
 export default function Homepage() {
   return (
     <div className="min-h-screen bg-gray-100 overflow-hidden">
@@ -23,7 +23,6 @@ export default function Homepage() {
           {/* Profile form aligned center-right */}
           <div className="flex justify-center">
             <div className="w-full max-w-md">
-              <NftProfileCard/>
             </div>
           </div>
         </main>

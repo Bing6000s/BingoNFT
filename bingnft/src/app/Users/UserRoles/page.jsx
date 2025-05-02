@@ -1,6 +1,5 @@
 import Navbar from "@/components/Navbar";
 import Sidebar from "@/components/Sidebar";
-import NftProfileCard1 from "@/components/demoCard";
 import UserRole from "@/components/Userpanel/userRoles";
 export default function Homepage() {
   return (

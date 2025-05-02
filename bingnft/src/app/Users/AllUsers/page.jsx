@@ -1,6 +1,5 @@
 import Navbar from "@/components/Navbar";
 import Sidebar from "@/components/Sidebar";
-import NftProfileCard1 from "@/components/demoCard";
 export default function Homepage() {
   return (
     <div className="min-h-screen bg-gray-100 overflow-hidden">

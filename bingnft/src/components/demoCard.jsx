@@ -8,8 +8,7 @@
  * quote 1
  * quote 2
  */
-
- export default function NftProfileCardGeneric({ username, imageUrl, quote1, quote2 }) {
+export default function NftProfileCardGeneric({username, imageUrl, quote1, quote2}) {
   return (
     <div className="w-full max-w-4xl bg-white rounded-2xl shadow-md border border-gray-200 p-6 mx-auto flex flex-col md:flex-row gap-6">
       {/* Left: Text */}
