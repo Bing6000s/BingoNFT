@@ -9,16 +9,18 @@ const wallets = [createWallet("io.metamask")];
 
 export default function Navbar(){
   return (
-    <div className="flex justify-end bg-gray-200 px-10 py-4">
-        <div>
-          <ConnectButton       
-            client={client}
-            wallets={wallets}
-            connectModal={{ size: "compact" }}/>
-        </div>
-        <div>
-        <IoIosNotifications className="mx-2 text-5xl"/>
-        </div>
+    <div className="relative flex items-center bg-gray-200 px-10 py-4">
+      <div className="absolute left-1/2 transform -translate-x-1/2 font-extrabold text-3xl text-indigo-800">
+        BingoNFT
+      </div>
+
+      <div className="ml-auto">
+        <ConnectButton
+          client={client}
+          wallets={wallets}
+          connectModal={{ size: 'compact' }}
+        />
+      </div>
     </div>
   )
 }
