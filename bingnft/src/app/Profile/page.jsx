@@ -17,7 +17,7 @@ export default function Homepage() {
 
           {/* Page heading */}
           <h1 className="text-center font-bold mb-6">
-            Add Your NFT Card Information.
+            AddEdit Your NFT Card Information.
           </h1>
 
           {/* Profile form aligned center-right */}
