@@ -1,6 +1,9 @@
 import Navbar from "./../../components/Navbar";
 import Sidebar from "./../../components/Sidebar";
-
+import { useActiveWallet,defineChain } from "thirdweb/react";
+import {client} from "../client"
+import { bingABI } from "../../../contracts/artifact/BING";
+import { prepareContractCall,sendTransaction } from "thirdweb";
 export default function gallery(){
   return(
   <div className=" bg-gray-100 overflow-hidden">

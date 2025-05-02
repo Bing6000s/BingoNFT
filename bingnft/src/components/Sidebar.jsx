@@ -23,7 +23,7 @@ const Sidebar = () => {
       <SidebarItem icon={<FaBookOpen />} label="Introduction" href="/" />
       <SidebarItem icon={<FaPlusCircle />} label="Add New Card" href="/Profile" />
       <SidebarItem icon={<FaImages />} label="Browse Gallery" href="/Gallery" />
-      <SidebarItem icon={<FaSearch />} label="Search Users" href="/Search" />
+      <SidebarItem icon={<FaSearch />} label="Search by Card Token" href="/Search" />
       <SidebarItem icon={<FaEye />} label="See Warnings" href="/Warnings" />
       <SidebarItem icon={<FaUserSlash />} label="Delete (Admin Only)" href="/Delete" />
       <SidebarItem icon={<FaExclamationTriangle />} label="Browse Warnings" href="/GetWarnings" />

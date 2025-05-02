@@ -11,7 +11,7 @@ export default function gallery(){
             <Navbar/>
           </div>
           <div className="px-4 mt-6">
-            <h1 className=" text-indigo-800 text-4xl text-center 
+            <h1 className=" text-indigo-800 text-2xl text-center 
             font-thin mb-2 leading-relaxed
             ">
               Check if you are flagged by admin for inappropriate contents.</h1>

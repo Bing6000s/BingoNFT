@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import { useActiveWallet } from 'thirdweb/react';
 import { getContract, defineChain } from 'thirdweb';
-import { client } from "./../../app/client"; // Make sure this has "use client"
+import { client } from "./../../app/client"; 
 import { bingABI } from '../../../contracts/artifact/BING';
 import { prepareContractCall, sendTransaction } from 'thirdweb';
 const bsc = defineChain({
