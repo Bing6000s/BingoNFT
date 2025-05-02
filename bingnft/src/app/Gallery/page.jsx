@@ -8,7 +8,6 @@ import Navbar from './../../components/Navbar';
 import Sidebar from './../../components/Sidebar';
 import NftProfileCardGeneric from './../../components/NFTCardGenerator';
 
-
 const bsc = defineChain({
   id: 56,
   name: 'BNB Smart Chain',
@@ -34,9 +33,8 @@ export default function Gallery() {
         });
 
         const temp = [];
-        let index = 0;
 
-        while (true) {
+        for (let index = 0; index < 512; index++) {
           try {
             const data = await readContract({
               contract,
@@ -44,9 +42,8 @@ export default function Gallery() {
               params: [BigInt(index)],
             });
             temp.push(data);
-            index++;
           } catch {
-            break; // stop on first failure (invalid index)
+            // skip missing/deleted token
           }
         }
 
@@ -83,7 +80,7 @@ export default function Gallery() {
           <section>
             <h2 className="text-2xl font-bold text-gray-700 mb-6">Minted Cards</h2>
             <p className="text-gray-500 text-sm mb-6">
-              {cards.length} card{cards.length !==1 ? 's':''} found on-chain
+              {cards.length} card{cards.length !== 1 ? 's' : ''} found on-chain
             </p>
             <div className="grid gap-8 md:grid-cols-2">
               {cards.map((card, i) => (
