@@ -80,7 +80,7 @@ export default function Gallery() {
           <section>
             <h2 className="text-2xl font-bold text-gray-700 mb-6">Minted Cards</h2>
             <p className="text-gray-500 text-sm mb-6">
-              {cards.length} card{cards.length !== 1 ? 's' : ''} found on-chain
+              Please wait for cards to load. {cards.length} card{cards.length !== 1 ? 's' : ''} found on-chain
             </p>
             <div className="grid gap-8 md:grid-cols-2">
               {cards.map((card, i) => (
