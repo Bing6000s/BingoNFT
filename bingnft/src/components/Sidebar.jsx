@@ -1,58 +1,46 @@
-'use client'
-import { useState } from "react";
-import {
-  FaHome,
-  FaCube,
-  FaWpforms,
-  FaUserFriends,
-} from "react-icons/fa";
+'use client';
 import Link from "next/link";
-import UserPanel from "./Userpanel/userpanel";
+import {
+  FaBookOpen,
+  FaPlusCircle,
+  FaImages,
+  FaSearch,
+  FaExclamationTriangle,
+  FaUserSlash,
+  FaEye
+} from "react-icons/fa";
 
 const Sidebar = () => {
   return (
-    <aside className="w-64 h-screen bg-[#cdcadb] flex flex-col">
+    <aside className="w-64 h-screen bg-[#cdcadb] flex flex-col p-4 space-y-3">
 
-      {/**
-       * LOGO
-       */}
-      <div className="w-full mb-4">
-        <Link href="/">
-          <img src="/BingoNFT.jpg" alt="Logo" className="w-full h-auto" />
-        </Link>
-      </div>
-
-      {/* Dashboard Link */}
+      {/* Logo */}
       <Link href="/">
-        <div className="flex items-center justify-between bg-indigo-600 text-white rounded-lg px-4 py-2 mb-4 cursor-pointer">
-          <div className="flex items-center space-x-2">
-            <FaHome />
-            <span className="font-medium">Landing Page</span>
-          </div>
-        </div>
+        <img src="/BingoNFT.jpg" alt="Logo" className="w-full h-auto mb-6" />
       </Link>
 
-      {/* Template Header */}
-      <div className="text-xs font-semibold text-black mb-2 px-1 uppercase">Manage</div>
+      {/* Sidebar Links */}
+      <SidebarItem icon={<FaBookOpen />} label="Introduction" href="/" />
+      <SidebarItem icon={<FaPlusCircle />} label="Add New Card" href="/Profile" />
+      <SidebarItem icon={<FaImages />} label="Browse Gallery" href="/Gallery" />
+      <SidebarItem icon={<FaSearch />} label="Search by Card Token" href="/Search" />
+      <SidebarItem icon={<FaExclamationTriangle />} label="Browse Warnings" href="/GetWarnings" />
+      <SidebarItem icon={<FaEye />} label="Sent Warning (Admin)" href="/Warnings" />
+      <SidebarItem icon={<FaUserSlash />} label="Delete (Admin Only)" href="/Delete" />
 
-      {/* Menu Items */}
-      <nav className="flex flex-col space-y-5 font-sans">
-        <UserPanel />
-        <SidebarItem icon={<FaCube />} label="NFT Collections" />
-        <SidebarItem icon={<FaWpforms />} label="Events Forms" />
-        <SidebarItem icon={<FaUserFriends />} label="Friends" />
-      </nav>
     </aside>
   );
 };
 
-const SidebarItem = ({ icon, label }) => (
-  <div className="flex items-center px-3 py-2 rounded-lg text-gray-700 hover:bg-gray-100 cursor-pointer">
-    <div className="flex items-center space-x-2">
-      {icon}
-      <span>{label}</span>
+const SidebarItem = ({ icon, label, href }) => (
+  <Link href={href}>
+    <div className="flex items-center px-3 py-2 rounded-lg text-gray-700 hover:bg-gray-100 cursor-pointer">
+      <div className="flex items-center space-x-2">
+        {icon}
+        <span className="font-medium">{label}</span>
+      </div>
     </div>
-  </div>
+  </Link>
 );
 
 export default Sidebar;

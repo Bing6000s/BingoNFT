@@ -1,6 +1,6 @@
-import Navbar from "@/components/Navbar";
-import Sidebar from "@/components/Sidebar";
-import NftProfileCardGeneric from "@/components/demoCard";
+import Navbar from "./../components/Navbar";
+import Sidebar from "./../components/Sidebar";
+import NftProfileCardGeneric from "../components/NFTCardGenerator";
 
 export default function Homepage() {
   return (
